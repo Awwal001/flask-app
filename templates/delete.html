@@ -1,0 +1,15 @@
+{% extends 'base.jinja2' %}
+
+{% block content %}
+<div class="jumbotron">
+    <h1>Did a puppy get adopted?</h1>
+    <p>If so, Please input its id to remove them from database</p>
+    <form method="POST">
+        {{form.hidden_tag()}}
+        {{form.id.label}}{{form.id}}
+        {{form.submit()}}
+
+    </form>
+
+</div>
+{% endblock %}
